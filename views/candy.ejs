@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Candy Ratings</title>
+</head>
+
+<body>
+    <%= single_candy.name %>
+    <br>
+    <br>
+    <%= single_candy.rating %>
+    <br>
+    <br>
+    ​
+    <br>
+    <br>
+    <a href="/updateRating/<%= single_candy.name %>"> Change candy rating </a>
+    ​
+    <br>
+    <br>
+    <a href="/delete/<%= single_candy.name %>"> Delete the candy </a>
+    ​
+</body>
+
+</html>
