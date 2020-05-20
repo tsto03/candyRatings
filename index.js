@@ -28,7 +28,7 @@ app.listen(PORT, () => {
     console.log(`Server Started on Port: ${PORT}`);
 
     let mongo_client = mongodb.MongoClient;
-    mongo_client.connect(DB_URL, (err, db_client) => {
+    mongo_client.connect(DB_URL, { useNewUrlParser: true, useUnifiedTopology: true }, (err, db_client) => {
         if (err) {
             console.log("Error: " + err);
         }
